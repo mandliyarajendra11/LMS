@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/bookStore/static/css/main.c0b40658.css",
+    "main.js": "/bookStore/static/js/main.968d3931.js",
+    "static/js/787.28cb0dcd.chunk.js": "/bookStore/static/js/787.28cb0dcd.chunk.js",
+    "static/media/picture1.jpg": "/bookStore/static/media/picture1.b81025bd5450d31d7aa7.jpg",
+    "static/media/pic-1.jpg": "/bookStore/static/media/pic-1.346fde204c98fe14a721.jpg",
+    "index.html": "/bookStore/index.html",
+    "main.c0b40658.css.map": "/bookStore/static/css/main.c0b40658.css.map",
+    "main.968d3931.js.map": "/bookStore/static/js/main.968d3931.js.map",
+    "787.28cb0dcd.chunk.js.map": "/bookStore/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c0b40658.css",
+    "static/js/main.968d3931.js"
+  ]
+}
