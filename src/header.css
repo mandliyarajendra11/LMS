@@ -1,0 +1,144 @@
+
+header{
+    width: 100%;
+      height: 12vh;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 30%;
+    background-color: var(--container3-color);
+    }
+  .po{
+    position: sticky;
+    z-index: 998;
+    top:0;left: 0;
+    box-shadow: var(--box-shadow);
+  
+  }
+  .div{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+  .nav{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+     gap: 7rem;
+      font-size: large;
+    }
+    .nav li{
+      position: relative;
+    }
+  header .uil{
+    font-size: 2rem;
+  }
+  .drop-down{
+    display: none;
+  }
+  .nav li:hover .drop-down{ 
+    width: 15rem;
+    display: block;
+    position: absolute;
+    left: 0%;
+    top: 100%;
+    z-index: 999;
+    background-color:var(--body-color);
+  }
+  .drop-down ul{
+    display: block;
+    padding:2rem 3rem;
+  } 
+  .drop-down ul li{
+    padding: 1rem 0;
+  }
+  header a:hover,.nav .active{
+    color:#017143;
+  }
+header img{
+  width: 10%;
+}
+.nav a {
+  position: relative;
+}
+
+.nav a::after {
+  content:'';
+  position: absolute;
+  height: .2rem;
+  width: 80%;
+  background-color: black;
+  bottom: -2px;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.5s ease-out;
+}
+.nav a:hover::after , .nav .active::after{
+ color: #017143;
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+.menu {
+  display: none;
+}
+/* top */
+.top{
+position: fixed;
+right: 1%;
+bottom: 5%;
+font-size: 5rem;
+z-index: 999;
+cursor: pointer;
+}
+.dark{
+  position: fixed;
+  left: 1%;
+bottom: 5%;
+font-size: 4rem;
+z-index: 999;
+text-align: center;
+cursor: pointer;
+
+}
+
+@media(max-width:768px)
+{
+  html{
+    font-size: 52%;
+  }
+  header{
+    justify-content: space-between;
+    padding :0 5rem ;
+  }
+    header .div{
+      display: none;
+      position:absolute;
+      flex-direction: column;
+      align-items: center;
+      top: 10rem;
+      right: 0;
+      justify-content: center;
+    z-index: 998;
+    background-color: var(--container-color);
+    padding: 2rem;
+    }
+    .nav{
+      flex-direction: column;
+      z-index: 999;
+      gap: 4rem;
+    }
+    .menu{
+    display: block;
+    justify-self: flex-end;
+    z-index: 999;
+    }
+    #menu{
+    font-size: 3rem;
+    }
+  #logo{
+    width: 30%;
+}
+}

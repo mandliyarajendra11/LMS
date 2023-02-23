@@ -1,13 +1,115 @@
-body {
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Poppins:wght@400;500;600&display=swap");
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  list-style: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+  --brand-hue: 200;
+  --brand-saturation: 100%;
+  --brand-lightness: 50%;
+  --hue : 0;
+  --sat :0%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root{
+--title-color:hsl(var(--hue),var(--sat),20%);
+--title-color-dark:hsl(var(--hue),var(--sat),0%);
+--text-color:hsl(var(--hue),var(--sat),46%);
+--body-color:hsl(var(--brand-hue) 25% 90%);
+--container-color:hsl(var(--brand-hue) 20% 99%);
+--body-font: 'Poppins', sans-serif;
+--box-shadow:var(--brand-hue) 10% 20%;
+--shadow-strength: .02;
+--container2-color: hsl(var(--brand-hue) 20% 92%);
+--container3-color:hsl(var(--brand-hue) 20% 85%);
+
+}
+[data-theme="dark"]{
+  --title-color:#fafafa;
+  --title-color-dark:#ffffff;
+  --text-color:#aeaeae;
+--body-color: hsl(var(--brand-hue) 10% 10%);
+--container-color: hsl(var(--brand-hue) 5% 25%);
+--body-font: 'Poppins', sans-serif;
+--box-shadow:var(--brand-hue) 50% 3%;
+--container2-color: hsl(var(--brand-hue) 5%  20%);
+--container3-color: hsl(var(--brand-hue) 5%  15%);
+--box-shadow:var(--brand-hue) 50% 3%;
+  --shadow-strength: var(--shadow-strength-dark);
+}
+[data-theme="dim"]{
+  --brand-hue: 200;
+  --title-color:#fafafa;
+  --title-color-dark:#ffffff;
+  --text-color:#aeaeae;
+  --body-color:hsl(var(--brand-hue) 10% 20%);
+  --container-color: hsl(var(--brand-hue) 5% 35%);
+  --container2-color: hsl(var(--brand-hue) 10%  25%);
+  --container3-color:hsl(var(--brand-hue) 5% 30%);
+  --box-shadow:var(--brand-hue) 30% 13%;
+  --shadow-strength-dim: .2;
+}
+body{
+  background-color: var(--body-color);
+}
+html {
+  font-size: 62.5%;
+  font-family: var(--body-font);
+  text-decoration: none;
+}
+h1 {
+  font-size: 4rem;
+  color: var(--title-color-dark);
+}
+h2 {
+  font-size: 3rem;
+  color: var(--title-color-dark);
+  
+}
+h3 {
+  font-size: 2.5rem;
+  color: var(--title-color-dark);
+  
+}
+h4 {
+  font-size: 2rem;
+  color: var(--title-color-dark);
+  
+}
+h5 {
+  font-size: 1.5rem;
+  color: var(--title-color);
+  
+}
+p,p a {
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+a span,a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: var(--text-color);  
+}
+i{
+  font-size: 1.5rem;
+  color:var(--title-color);
+}
+.btn {
+  padding: 1rem;
+    background-color:var(--title-color);
+    color: var(--container-color);
+    /* border-radius: .5rem; */
+  }
+  .btn:hover {
+  background-color:var(--title-color-dark);
+}
+.btn i{
+  font-size: 1.5rem;
+ 
+  color: var(--text-color);
 }

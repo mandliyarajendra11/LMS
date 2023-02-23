@@ -1,3 +1,9 @@
+
+about project- the purpose of the project is show my react skill and make a usefull app in this app you can find out any book by the search 
+option and also you can see some default book added by me 
+and if you want to send any msg then go to the about us section /contact us - type your mail click on send.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -1,0 +1,56 @@
+.page{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: center;
+    gap: 8%;
+    align-content: center;
+}
+.contact{
+    text-align: center;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.talk{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+}
+.talk .btn{
+    align-self: flex-start;
+}
+.talk div{
+    padding: 2rem;
+}
+.talk div ,.talk input{
+    background-color: var(--container-color);
+    border: 1px solid var(--text-color);
+    border-radius: 1rem;
+}
+
+.talk input{
+    width: 25rem;
+    height : 5rem;
+    padding: 1rem;
+}
+.talk .msg{
+    height: 8rem;
+}
+@media(max-width:568px)
+{
+    .page{
+        height: 150vh;
+        display: flex;
+        flex-direction: column;
+        justify-content:center ;
+        align-items: center;
+        }
+        .talk{
+            gap: 2rem;
+        }
+        .talk .btn{
+            align-self: center;
+        }
+}
